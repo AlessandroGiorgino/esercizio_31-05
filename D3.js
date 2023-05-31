@@ -124,6 +124,8 @@ console.log("Esercizio 2", characters);
   {name: Leia Organa, hair_color: "brown", eye_color: "brown"}
 */
 
+//Correzione: per farlo a modo avremmo dovuto, prima di pushare, creare una copia dell'oggetto (perchè cancellando cose poi le cancelliamo dall'originale) per poi   delete starWarsCharacters[i].tutti quelli che non erano quelloi che chiedeva la onsegna, quinid hair_color etc
+
 femaleCharacters = [];
 
 for (let i = 0; i < starWarsCharacters.length; i++) {
