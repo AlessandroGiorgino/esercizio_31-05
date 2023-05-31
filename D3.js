@@ -223,10 +223,10 @@ console.log("Esercizio 8", starWarsCharacters);
   Crea una funzionalità che prenda un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
 
+let numeroCaso = Math.floor(Math.random() * starWarsCharacters.length);
 for (let i = 0; i < starWarsCharacters.length; i++) {
-  let numeroCaso = Math.floor(Math.random() * starWarsCharacters.length);
-
-  if ((numeroCaso = starWarsCharacters[i])) {
+  if (numeroCaso === i) {
+    //avevo sbagliato la i, perché numeroCaso deve essere uguale a i, non all'indice!!!
     console.log(
       "Ecco qui " +
         starWarsCharacters[i].name +
