@@ -223,10 +223,8 @@ console.log("Esercizio 8", starWarsCharacters);
 
 for (let i = 0; i < starWarsCharacters.length; i++) {
   let numeroCaso = Math.floor(Math.random() * starWarsCharacters.length);
-  console.log(numeroCaso);
-  console.log(starWarsCharacters[i]);
 
-  if (numeroCaso === starWarsCharacters[i]) {
+  if ((numeroCaso = starWarsCharacters[i])) {
     console.log(
       "Ecco qui " +
         starWarsCharacters[i].name +
